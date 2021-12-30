@@ -11,9 +11,6 @@ app = Flask(__name__)
 app_json = functions.load_file(POST_PATH, read_method[0], "utf-8")
 
 
-
-
-
 @app.route("/")
 def page_index():
     s = functions.index_tag(app_json)
